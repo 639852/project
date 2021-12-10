@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  @@include('_sidebar.html')
+
+  @@include('_header.html')
+
+  <main class="main">
+    @@include('_customers-inter.html', { text: "Customers" })
+
+    <section class="customers-list">
+      <div class="container">
+        <h3>Latest Orders</h3>
+        <div class="table-wrapper">
+          <table class="customers-list__table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>Phone</th>
+                <th>Registration date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+              <tr>
+                <td class="customers-list__name">Ekaterina Tankova</td>
+                <td>ekaterina.tankova@devias.io</td>
+                <td>Parkersburg, West Virginia, USA</td>
+                <td>304-428-3097</td>
+                <td>12/04/2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="customers-list__nav">
+          <p>Rows per page: <span>10</span></p>
+          <span>1-5 of 13</span>
+          <button class="customers-list__button"><img src="img/arrow-left.svg" alt="Arrow Left"></button>
+          <button class="customers-list__button"><img src="img/arrow-right.svg" alt="Arrow Right"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('_footer.html')
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

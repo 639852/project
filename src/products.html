@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  @@include('_sidebar.html')
+
+  @@include('_header.html')
+
+  <main class="main">
+    @@include('_customers-inter.html', { text: "Products" })
+
+    <section class="products">
+      <div class="container">
+        <div class="products__content">
+          <div class="products__item">
+            <img src="img/dropbox.png" alt="Dropbox">
+            <h2>Dropbox</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+          <div class="products__item">
+            <img src="img/medium.png" alt="Medium">
+            <h2>Medium</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+          <div class="products__item">
+            <img src="img/slack.png" alt="Slack">
+            <h2>Slack</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+          <div class="products__item">
+            <img src="img/dropbox.png" alt="Dropbox">
+            <h2>Dropbox</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+          <div class="products__item">
+            <img src="img/medium.png" alt="Medium">
+            <h2>Medium</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+          <div class="products__item">
+            <img src="img/slack.png" alt="Slack">
+            <h2>Slack</h2>
+            <p>Dropbox is a file hosting service that offers cloud storage, file synchronization, a personal cloud.</p>
+            <div class="products__stat">
+              <span><img src="img/clock.svg" alt="Clock" class="products__img">Updated 2 hr ago</span>
+              <span><img src="img/export.svg" alt="Download" class="products__img">Updated 2 hr ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="products__nav">
+          <button class="products__button"><img src="img/arrow-left.svg" alt="Arrow Left"></button>
+          <button class="products__page active">1</button>
+          <button class="products__page">2</button>
+          <button class="products__page">3</button>
+          <button class="products__button"><img src="img/arrow-right.svg" alt="Arrow Right"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
